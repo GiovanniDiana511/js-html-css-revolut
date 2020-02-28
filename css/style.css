@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header {
+    height: 80px;
+}
+
+.container {
+    height: 100%;
+    max-width: 100%;
+}
+
+.header-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#logo {
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 70px;
+    width: 250px;
+}
+
+.header-right {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.menu-item {
+    padding-left: 45px;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    color: #1b3c59;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu-item > a:hover {
+    border-bottom: 3px solid lightgreen;
+    border-radius: 5%;
+}
+
+#corso::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-weight: 900;
+    color: #1b3c59;
+    padding-left: 15px;
+}
+
+#dopo-corso::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 5%;
+    box-shadow: 2.5px 5px #999999;
+    width: 110px;
+    padding-left: 5px;
+}
+
+.dropdown-menu-item {
+    padding: 15px 0px;
+}
+
+.dropdown-menu-item > a{
+    color: #1b3c59;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.dropdown-menu-item > a:hover{
+    border-bottom: 2px solid lightgreen;
+}
+
+#dropdown-dpcorso {
+    width: 180px;
+}
